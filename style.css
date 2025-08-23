@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: large;
+    font-weight: 600;
+    font-family: "JetBrains Mono";
+}
+
+body{
+    background-color: rgb(77, 77, 77);
+    font-family: "JetBrains Mono";
+}
+
+h1{
+    color: rgb(237, 237, 237);
+    background-color: rgb(11, 0, 94);
+    text-align: center;
+    border-color: black;
+    border: 8px solid black;
+    font-style: normal;
+    padding: 8px;
+    margin: 8px 24px;
+
+}
+
+span{
+    font-size: large;
+    font-weight: 900;
+    background-color: black;
+}
+
+#content{
+    margin: 16px 32px;
+    color: antiquewhite;
+    line-height: 2;
+
+}
+
+.body-1{
+    text-align: center;
+    background-color: antiquewhite;
+    border: 8px solid black;
+    margin: auto;
+    padding: 8px;
+}
+
+.body-2{
+    text-align: center;
+    background-color: antiquewhite;
+    border: 8px solid black;
+    margin: auto;
+    padding: 8px;
+}
+
+.button-one{
+    margin: 16px auto;
+    padding: 16px;
+    text-align: center;
+}
+
+.button-two{
+    margin: 16px auto;
+    padding: 16px;
+    text-align: center;
+
+}
