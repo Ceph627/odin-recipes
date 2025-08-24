@@ -35,6 +35,7 @@ span{
     background-color: black;
 }
 
+.content,
 #content{
     text-align: justify;
     margin: 8px auto;
@@ -43,6 +44,24 @@ span{
     color: antiquewhite;
     line-height: 2;
 
+}
+
+/* Ensure list markers are visible on small screens */
+.content ul,
+.content ol,
+#content ul,
+#content ol{
+    /* give space for bullets/numbers so they don't get clipped */
+    padding-inline-start: 1.5rem; /* modern property */
+    padding-left: 1.5rem; /* fallback for some browsers */
+    margin-left: 0.5rem;
+    list-style-position: outside;
+
+}
+
+.content,
+#content{
+    overflow: visible; /* allow markers to render outside the content box */
 }
 
 .body-1{
@@ -63,13 +82,13 @@ span{
 
 .button-one{
     margin: 16px auto;
-    padding: 16px;
+    padding: 0; /* padding applied to anchor itself now */
     text-align: center;
 }
 
 .button-two{
     margin: 16px auto;
-    padding: 16px;
+    padding: 0;
     text-align: center;
 
 }
@@ -86,11 +105,25 @@ button{
     font-size: inherit;
 }
 
-button a{
-    color: inherit;
+/* Style anchors that act as buttons */
+.button-one,
+.button-two{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    display: block; /* make block so margin:auto centers */
+    width: fit-content;
+    margin: 16px auto;
     text-decoration: none;
-    display: inline-block;
-    line-height: 1;
+    font-family: inherit;
+}
+
+.button-one:hover,
+.button-two:hover{
+    filter: brightness(0.9);
 }
 
 a:hover{
