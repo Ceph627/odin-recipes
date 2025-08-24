@@ -37,7 +37,7 @@ span{
 
 #content{
     text-align: justify;
-    margin: 16px 150px;
+    margin: 16px auto;
     width: 900px;
     padding: 8px;
     color: antiquewhite;
