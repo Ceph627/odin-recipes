@@ -37,9 +37,9 @@ span{
 
 #content{
     text-align: justify;
-    margin: 16px auto;
-    width: 900px;
-    padding: 8px;
+    margin: 8px auto;
+    width: fit-content;
+    padding: 32px;
     color: antiquewhite;
     line-height: 2;
 
@@ -93,9 +93,6 @@ button a{
     line-height: 1;
 }
 
-button:hover{
-    filter: brightness(0.7);
-}
 a:hover{
     filter: brightness(0.7);
 }
